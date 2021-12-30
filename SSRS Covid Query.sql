@@ -110,8 +110,8 @@ Join [SQL Portfolio]..CovidVaccinations vac
 where dea.continent is not null 
 order by 2,3
 
--- as the data increases the column increases so increase the column size using ALTER TABLE [SQL PORTFOLIO]..CovidDeaths ALTER COLUMN location varchar(150)
 
+-- as the data increases the column increases so increase the column size using ALTER TABLE [SQL PORTFOLIO]..CovidDeaths ALTER COLUMN location varchar(150), Also change int to bigint for more space
 Select 
 dea.continent, 
 dea.location, 
